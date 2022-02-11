@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food List</title>
+</head>
+
+<body>
+    @{
+        var StringList = new List<string>
+    {
+    "Apple Pie",
+    "Burritos",
+    "Clam Casino",
+    "Donuts"
+    };
+
+        foreach (var food in StringList)
+        {
+            <div>
+                <p>@food</p>
+                @if (food[0] == "C"[0])
+                {
+                    <p style="color: red">@food</p>
+                }
+                else
+                {
+                    <p>@food</p>
+                }
+            </div>
+        }
+    }
+
+
+</body>
+
+</html>
